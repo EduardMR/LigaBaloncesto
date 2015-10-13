@@ -17,9 +17,9 @@ public class Jugador {
 
     private String nombre;
     private Date fechaNacimiento;
-    private Integer CanastasTotales;
-    private Integer AsistenciasTotales;
-    private Integer RebotesTotales;
+    private Integer canastasTotales;
+    private Integer asistenciasTotales;
+    private Integer rebotesTotales;
     private String posicion;
 
     public Long getId() {
@@ -35,15 +35,15 @@ public class Jugador {
     }
 
     public Integer getCanastasTotales() {
-        return CanastasTotales;
+        return canastasTotales;
     }
 
     public Integer getAsistenciasTotales() {
-        return AsistenciasTotales;
+        return asistenciasTotales;
     }
 
     public Integer getRebotesTotales() {
-        return RebotesTotales;
+        return rebotesTotales;
     }
 
     public String getPosicion() {
@@ -62,16 +62,13 @@ public class Jugador {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public void setCanastasTotales(Integer canastasTotales) {
-        CanastasTotales = canastasTotales;
+    public void setCanastasTotales(Integer canastasTotales) { this.canastasTotales = canastasTotales;
     }
 
-    public void setAsistenciasTotales(Integer asistenciasTotales) {
-        AsistenciasTotales = asistenciasTotales;
+    public void setAsistenciasTotales(Integer asistenciasTotales) { this.asistenciasTotales = asistenciasTotales;
     }
 
-    public void setRebotesTotales(Integer rebotesTotales) {
-        RebotesTotales = rebotesTotales;
+    public void setRebotesTotales(Integer rebotesTotales) {this.rebotesTotales = rebotesTotales;
     }
 
     public void setPosicion(String posicion) {
@@ -84,9 +81,9 @@ public class Jugador {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", fechaNacimiento=" + fechaNacimiento +
-                ", CanastasTotales=" + CanastasTotales +
-                ", AsistenciasTotales=" + AsistenciasTotales +
-                ", RebotesTotales=" + RebotesTotales +
+                ", CanastasTotales=" + canastasTotales +
+                ", AsistenciasTotales=" + asistenciasTotales +
+                ", RebotesTotales=" + rebotesTotales +
                 ", posicion='" + posicion + '\'' +
                 '}';
     }

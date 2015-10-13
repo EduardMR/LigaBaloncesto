@@ -15,5 +15,10 @@ public class LigaBaloncestoApplication {
         JugadorService jugadorService = context.getBean(JugadorService.class);
         jugadorService.TestJ();
 
+
+
+
+
+
     }
 }
