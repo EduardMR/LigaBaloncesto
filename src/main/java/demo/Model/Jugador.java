@@ -22,6 +22,11 @@ public class Jugador {
     private Integer rebotesTotales;
     private String posicion;
 
+    @ManyToOne
+    private Equipo equipo;
+
+
+
     public Long getId() {
         return id;
     }
