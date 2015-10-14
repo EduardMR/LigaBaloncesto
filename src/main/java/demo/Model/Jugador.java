@@ -25,7 +25,13 @@ public class Jugador {
     @ManyToOne
     private Equipo equipo;
 
+    public Equipo getEquipo() {
+        return equipo;
+    }
 
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
 
     public Long getId() {
         return id;
@@ -38,6 +44,7 @@ public class Jugador {
     public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
+
 
     public Integer getCanastasTotales() {
         return canastasTotales;

@@ -96,6 +96,28 @@ public class JugadorService {
 
         jugadorRepository.save(jugador5);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         System.out.println(jugadorRepository.findOne(jugador1.getId()));
 
         System.out.println(jugadorRepository.findByNombreStartingWith("E"));

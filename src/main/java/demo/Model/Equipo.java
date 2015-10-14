@@ -1,11 +1,12 @@
 package demo.Model;
 
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
+@Entity
 public class Equipo {
 
     //En este segundo ejercicio, definiremos la entidad Equipo. Inicialmente, la entidad Equipo tendrá
@@ -19,6 +20,8 @@ public class Equipo {
     private String localidad;
     private Date fechaCreacion;
 
+    @OneToMany(mappedBy = "equipo")
+    private Set<Jugador> jugadors = new HashSet<>();
 
 
     public Long getId() {
@@ -51,6 +54,14 @@ public class Equipo {
 
     public void setFechaCreacion(Date fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
+    }
+
+    public Set<Jugador> getJugadors() {
+        return jugadors;
+    }
+
+    public void setJugadors(Set<Jugador> jugadors) {
+        this.jugadors = jugadors;
     }
 
     @Override
