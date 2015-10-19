@@ -99,33 +99,13 @@ public class JugadorService {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        System.out.println(jugadorRepository.findOne(jugador1.getId()));
-
-        System.out.println(jugadorRepository.findByNombreStartingWith("E"));
-        System.out.println(jugadorRepository.findByCanastasTotalesGreaterThanEqual(50));
-        System.out.println(jugadorRepository.findByAsistenciasTotalesBetween(20, 50));
-        System.out.println(jugadorRepository.findByPosicionIs("base"));
-        System.out.println(jugadorRepository.findByFechaNacimientoBefore(cal.getTime()));
-        System.out.println(jugadorRepository.findByCanastasTotalesGreaterThanEqualAndFechaNacimientoBefore(55,cal.getTime()));
+        //System.out.println(jugadorRepository.findOne(jugador1.getId()));
+        //System.out.println(jugadorRepository.findByNombreStartingWith("E"));
+        //System.out.println(jugadorRepository.findByCanastasTotalesGreaterThanEqual(50));
+        //System.out.println(jugadorRepository.findByAsistenciasTotalesBetween(20, 50));
+        //System.out.println(jugadorRepository.findByPosicionIs("base"));
+        //System.out.println(jugadorRepository.findByFechaNacimientoBefore(cal.getTime()));
+        //System.out.println(jugadorRepository.findByCanastasTotalesGreaterThanEqualAndFechaNacimientoBefore(55,cal.getTime()));
 
 
         }

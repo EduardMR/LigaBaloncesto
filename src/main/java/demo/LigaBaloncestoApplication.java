@@ -1,5 +1,6 @@
 package demo;
 
+import demo.Service.EquipoService;
 import demo.Service.JugadorService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +16,8 @@ public class LigaBaloncestoApplication {
         JugadorService jugadorService = context.getBean(JugadorService.class);
         jugadorService.TestJ();
 
+        EquipoService equipoService = context.getBean(EquipoService.class);
+        equipoService.TestE();
 
 
 
