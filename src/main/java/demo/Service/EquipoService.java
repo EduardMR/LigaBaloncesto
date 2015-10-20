@@ -10,6 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Calendar;
 import java.util.Date;
 
+//--------------------------EQUIPOS SERVICE-------------------------------------------------------------------------
+
+
 @Service
 @Transactional
 public class EquipoService {
@@ -18,7 +21,8 @@ public class EquipoService {
     private EquipoRepository equipoRepository;
 
     public void TestE() {
-        //Equipo 1------------------------------------------------------------------
+
+        //Equipo 1------------------------------------------------------------------------------------------------------
 
         Equipo equipo1 = new Equipo();
 
@@ -32,7 +36,7 @@ public class EquipoService {
         equipo1.setFechaCreacion(birthdate1);
         equipoRepository.save(equipo1);
 
-        //Equipo 2------------------------------------------------------------------
+        //Equipo 2------------------------------------------------------------------------------------------------------
 
         Equipo equipo2 = new Equipo();
         equipo2.setNombre("Madrid");
@@ -46,7 +50,7 @@ public class EquipoService {
 
         equipoRepository.save(equipo2);
 
-        //Equipo 3------------------------------------------------------------------
+        //Equipo 3------------------------------------------------------------------------------------------------------
 
         Equipo equipo3 = new Equipo();
         equipo3.setNombre("Sevilla");
@@ -60,7 +64,7 @@ public class EquipoService {
 
         equipoRepository.save(equipo3);
 
-        //Equipo 4------------------------------------------------------------------
+        //Equipo 4------------------------------------------------------------------------------------------------------
 
         Equipo equipo4 = new Equipo();
         equipo4.setNombre("Malaga");
@@ -74,7 +78,7 @@ public class EquipoService {
 
         equipoRepository.save(equipo4);
 
-        //Equipo 5------------------------------------------------------------------
+        //Equipo 5------------------------------------------------------------------------------------------------------
 
         Equipo equipo5 = new Equipo();
         equipo5.setNombre("Gran Canaria");
@@ -89,3 +93,4 @@ public class EquipoService {
         equipoRepository.save(equipo5);
     }
 }
+

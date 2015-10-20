@@ -1,7 +1,11 @@
 package demo.Service;
 
+import demo.Model.Equipo;
 import demo.Model.Jugador;
+import demo.Model.Liga;
+import demo.Repository.EquipoRepository;
 import demo.Repository.JugadorRepository;
+import demo.Repository.LigaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +21,11 @@ public class JugadorService {
 
     private JugadorRepository jugadorRepository;
 
+    //---------------------------------------JUGADOR SERVICE------------------------------------------------------------
+
     public void TestJ(){
+
+    //----Jugador 1-----------------------------------------------------------------------------------------------------
 
         Jugador jugador1 = new Jugador();
         jugador1.setNombre("Eduard");
@@ -34,6 +42,8 @@ public class JugadorService {
 
         jugadorRepository.save(jugador1);
 
+    //----Jugador 2-----------------------------------------------------------------------------------------------------
+
         Jugador jugador2 = new Jugador();
         jugador2.setNombre("David");
 
@@ -48,6 +58,8 @@ public class JugadorService {
         jugador2.setPosicion("alero");
 
         jugadorRepository.save(jugador2);
+
+    //----Jugador 3-----------------------------------------------------------------------------------------------------
 
         Jugador jugador3 = new Jugador();
         jugador3.setNombre("Marc");
@@ -64,6 +76,7 @@ public class JugadorService {
 
         jugadorRepository.save(jugador3);
 
+    //----Jugador 4-----------------------------------------------------------------------------------------------------
 
         Jugador jugador4 = new Jugador();
         jugador4.setNombre("Eustaquio");
@@ -80,6 +93,7 @@ public class JugadorService {
 
         jugadorRepository.save(jugador4);
 
+    //----Jugador 5-----------------------------------------------------------------------------------------------------
 
         Jugador jugador5 = new Jugador();
         jugador5.setNombre("Marco");
@@ -109,7 +123,4 @@ public class JugadorService {
 
 
         }
-
-
-
-}
+    }
