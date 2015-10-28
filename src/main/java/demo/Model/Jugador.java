@@ -86,17 +86,18 @@ public class Jugador {
     public void setPosicion(String posicion) {
         this.posicion = posicion;
     }
-    
+
     @Override
     public String toString() {
         return "Jugador{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", fechaNacimiento=" + fechaNacimiento +
-                ", CanastasTotales=" + canastasTotales +
-                ", AsistenciasTotales=" + asistenciasTotales +
-                ", RebotesTotales=" + rebotesTotales +
+                ", canastasTotales=" + canastasTotales +
+                ", asistenciasTotales=" + asistenciasTotales +
+                ", rebotesTotales=" + rebotesTotales +
                 ", posicion='" + posicion + '\'' +
+                ", equipo=" + equipo +
                 '}';
     }
 }

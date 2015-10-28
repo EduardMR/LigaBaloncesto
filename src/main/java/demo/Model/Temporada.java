@@ -1,12 +1,14 @@
 package demo.Model;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Eduard.martinez on 20/10/2015.
+
  */
+@Entity
 public class Temporada {
 
     @Id
@@ -14,6 +16,20 @@ public class Temporada {
     private Long id;
 
     private String año;
+
+    @ManyToOne
+    private Liga liga;
+
+    @ManyToMany
+    private Set<Equipo> equipos = new HashSet<>();
+
+    public Set<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public void setEquipos(Set<Equipo> equipos) {
+        this.equipos = equipos;
+    }
 
     public Long getId() {
         return id;
@@ -29,6 +45,14 @@ public class Temporada {
 
     public void setAño(String año) {
         this.año = año;
+    }
+
+    public Liga getLiga() {
+        return liga;
+    }
+
+    public void setLiga(Liga liga) {
+        this.liga = liga;
     }
 
     @Override

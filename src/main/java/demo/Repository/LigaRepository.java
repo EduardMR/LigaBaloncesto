@@ -8,6 +8,8 @@ import org.springframework.data.repository.PagingAndSortingRepository;
  */
 public interface LigaRepository extends PagingAndSortingRepository<Liga, Long> {
 
+    Liga findByNombre(String nombreLiga);
+
 
 
 
