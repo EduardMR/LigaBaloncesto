@@ -20,7 +20,7 @@ public class Equipo {
     private String localidad;
     private Date fechaCreacion;
 
-    @OneToMany
+    @OneToMany (mappedBy = "equipo")
     private Set<Jugador> jugadors = new HashSet<>();
 
     @ManyToMany (mappedBy = "equipos")

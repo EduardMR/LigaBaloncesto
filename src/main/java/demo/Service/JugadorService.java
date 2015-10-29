@@ -6,12 +6,15 @@ import demo.Model.Liga;
 import demo.Repository.EquipoRepository;
 import demo.Repository.JugadorRepository;
 import demo.Repository.LigaRepository;
+import org.jboss.logging.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 @Service
 @Transactional
@@ -116,7 +119,7 @@ public class JugadorService {
 
         jugadorRepository.save(jugador5);
 
-        //----Jugador 6-----------------------------------------------------------------------------------------------------
+    //----Jugador 6-----------------------------------------------------------------------------------------------------
 
         Jugador jugador6 = new Jugador();
         jugador6.setNombre("Mou");
@@ -129,7 +132,7 @@ public class JugadorService {
 
         jugadorRepository.save(jugador6);
 
-//----Jugador7-----------------------------------------------------------------------------------------------------
+    //----Jugador7-----------------------------------------------------------------------------------------------------
 
         Jugador jugador7 = new Jugador();
         jugador7.setNombre("Abel");
@@ -142,10 +145,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador7);
 
-//----Jugador8-----------------------------------------------------------------------------------------------------
+    //----Jugador8-----------------------------------------------------------------------------------------------------
 
         Jugador jugador8 = new Jugador();
-        jugador8.setNombre("Cono");
+        jugador8.setNombre("Sql");
         jugador8.setFechaNacimiento(birthdate);
         jugador8.setCanastasTotales(79);
         jugador8.setAsistenciasTotales(21);
@@ -156,10 +159,10 @@ public class JugadorService {
         jugadorRepository.save(jugador8);
 
 
-//----Jugador9-----------------------------------------------------------------------------------------------------
+    //----Jugador9-----------------------------------------------------------------------------------------------------
 
         Jugador jugador9 = new Jugador();
-        jugador9.setNombre("Cono");
+        jugador9.setNombre("Apache");
         jugador9.setFechaNacimiento(birthdate);
         jugador9.setCanastasTotales(79);
         jugador9.setAsistenciasTotales(21);
@@ -169,10 +172,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador9);
 
-//----Jugador10-----------------------------------------------------------------------------------------------------
+    //----Jugador10-----------------------------------------------------------------------------------------------------
 
         Jugador jugador10 = new Jugador();
-        jugador10.setNombre("Cono");
+        jugador10.setNombre("Almoadilla");
         jugador10.setFechaNacimiento(birthdate);
         jugador10.setCanastasTotales(79);
         jugador10.setAsistenciasTotales(21);
@@ -182,10 +185,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador10);
 
-//----Jugador11-----------------------------------------------------------------------------------------------------
+    //----Jugador11-----------------------------------------------------------------------------------------------------
 
         Jugador jugador11 = new Jugador();
-        jugador11.setNombre("Cono");
+        jugador11.setNombre("CaraCono");
         jugador11.setFechaNacimiento(birthdate);
         jugador11.setCanastasTotales(79);
         jugador11.setAsistenciasTotales(21);
@@ -195,10 +198,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador11);
 
-//----Jugador12-----------------------------------------------------------------------------------------------------
+    //----Jugador12-----------------------------------------------------------------------------------------------------
 
         Jugador jugador12 = new Jugador();
-        jugador12.setNombre("Cono");
+        jugador12.setNombre("Zebra");
         jugador12.setFechaNacimiento(birthdate);
         jugador12.setCanastasTotales(79);
         jugador12.setAsistenciasTotales(21);
@@ -208,10 +211,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador12);
 
-//----Jugador13-----------------------------------------------------------------------------------------------------
+    //----Jugador13-----------------------------------------------------------------------------------------------------
 
         Jugador jugador13 = new Jugador();
-        jugador13.setNombre("Cono");
+        jugador13.setNombre("Chorlito");
         jugador13.setFechaNacimiento(birthdate);
         jugador13.setCanastasTotales(79);
         jugador13.setAsistenciasTotales(21);
@@ -221,10 +224,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador13);
 
-//----Jugador14-----------------------------------------------------------------------------------------------------
+    //----Jugador14-----------------------------------------------------------------------------------------------------
 
         Jugador jugador14 = new Jugador();
-        jugador14.setNombre("Cono");
+        jugador14.setNombre("Pantalla");
         jugador14.setFechaNacimiento(birthdate);
         jugador14.setCanastasTotales(79);
         jugador14.setAsistenciasTotales(21);
@@ -234,10 +237,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador8);
 
-//----Jugador15-----------------------------------------------------------------------------------------------------
+    //----Jugador15-----------------------------------------------------------------------------------------------------
 
         Jugador jugador15 = new Jugador();
-        jugador15.setNombre("Cono");
+        jugador15.setNombre("Cronometro");
         jugador15.setFechaNacimiento(birthdate);
         jugador15.setCanastasTotales(79);
         jugador15.setAsistenciasTotales(21);
@@ -247,10 +250,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador15);
 
-//----Jugador16-----------------------------------------------------------------------------------------------------
+    //----Jugador16-----------------------------------------------------------------------------------------------------
 
         Jugador jugador16 = new Jugador();
-        jugador16.setNombre("Cono");
+        jugador16.setNombre("Chapuzas");
         jugador16.setFechaNacimiento(birthdate);
         jugador16.setCanastasTotales(79);
         jugador16.setAsistenciasTotales(21);
@@ -260,10 +263,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador16);
 
-//----Jugador17-----------------------------------------------------------------------------------------------------
+    //----Jugador17-----------------------------------------------------------------------------------------------------
 
         Jugador jugador17 = new Jugador();
-        jugador17.setNombre("Cono");
+        jugador17.setNombre("Marimacho");
         jugador17.setFechaNacimiento(birthdate);
         jugador17.setCanastasTotales(79);
         jugador17.setAsistenciasTotales(21);
@@ -273,10 +276,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador17);
 
-//----Jugador18-----------------------------------------------------------------------------------------------------
+    //----Jugador18-----------------------------------------------------------------------------------------------------
 
         Jugador jugador18 = new Jugador();
-        jugador18.setNombre("Cono");
+        jugador18.setNombre("Aceite");
         jugador18.setFechaNacimiento(birthdate);
         jugador18.setCanastasTotales(79);
         jugador18.setAsistenciasTotales(21);
@@ -286,10 +289,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador18);
 
-//----Jugador19-----------------------------------------------------------------------------------------------------
+    //----Jugador19-----------------------------------------------------------------------------------------------------
 
         Jugador jugador19 = new Jugador();
-        jugador19.setNombre("Cono");
+        jugador19.setNombre("Ajo");
         jugador19.setFechaNacimiento(birthdate);
         jugador19.setCanastasTotales(79);
         jugador19.setAsistenciasTotales(21);
@@ -299,10 +302,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador19);
 
-//----Jugador20-----------------------------------------------------------------------------------------------------
+    //----Jugador20-----------------------------------------------------------------------------------------------------
 
         Jugador jugador20 = new Jugador();
-        jugador20.setNombre("Cono");
+        jugador20.setNombre("Camarera");
         jugador20.setFechaNacimiento(birthdate);
         jugador20.setCanastasTotales(79);
         jugador20.setAsistenciasTotales(21);
@@ -312,10 +315,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador20);
 
-//----Jugador21-----------------------------------------------------------------------------------------------------
+    //----Jugador21-----------------------------------------------------------------------------------------------------
 
         Jugador jugador21 = new Jugador();
-        jugador21.setNombre("Cono");
+        jugador21.setNombre("Chorizo");
         jugador21.setFechaNacimiento(birthdate);
         jugador21.setCanastasTotales(79);
         jugador21.setAsistenciasTotales(21);
@@ -325,10 +328,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador21);
 
-//----Jugador22-----------------------------------------------------------------------------------------------------
+    //----Jugador22-----------------------------------------------------------------------------------------------------
 
         Jugador jugador22 = new Jugador();
-        jugador22.setNombre("Cono");
+        jugador22.setNombre("huevo");
         jugador22.setFechaNacimiento(birthdate);
         jugador22.setCanastasTotales(79);
         jugador22.setAsistenciasTotales(21);
@@ -338,10 +341,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador22);
 
-//----Jugador23-----------------------------------------------------------------------------------------------------
+    //----Jugador23-----------------------------------------------------------------------------------------------------
 
         Jugador jugador23 = new Jugador();
-        jugador23.setNombre("Cono");
+        jugador23.setNombre("Patata");
         jugador23.setFechaNacimiento(birthdate);
         jugador23.setCanastasTotales(79);
         jugador23.setAsistenciasTotales(21);
@@ -351,10 +354,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador23);
 
-//----Jugador24-----------------------------------------------------------------------------------------------------
+    //----Jugador24-----------------------------------------------------------------------------------------------------
 
         Jugador jugador24 = new Jugador();
-        jugador24.setNombre("Cono");
+        jugador24.setNombre("Berberecho");
         jugador24.setFechaNacimiento(birthdate);
         jugador24.setCanastasTotales(79);
         jugador24.setAsistenciasTotales(21);
@@ -364,10 +367,10 @@ public class JugadorService {
 
         jugadorRepository.save(jugador24);
 
-//----Jugador25-----------------------------------------------------------------------------------------------------
+    //----Jugador25-----------------------------------------------------------------------------------------------------
 
         Jugador jugador25 = new Jugador();
-        jugador25.setNombre("Cono");
+        jugador25.setNombre("Almeja");
         jugador25.setFechaNacimiento(birthdate);
         jugador25.setCanastasTotales(79);
         jugador25.setAsistenciasTotales(21);
@@ -378,6 +381,26 @@ public class JugadorService {
         jugadorRepository.save(jugador25);
 
 
+    //------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------
+    //------------------------------------------------------------------------------------------------------------------
+
+
+    //-----I----------------------------------------------------------------------------------------------------------------
+        System.out.println("Muestra @Query 1");
+        System.out.println(jugadorRepository.findByNombreEquipo("Malaga"));
+    //-----II---------------------------------------------------------------------------------------------------------------
+        System.out.println("Muestra @Query 2");
+        System.out.println(jugadorRepository.findJugadoresByposicionfromEquipo("Ala Pivot", "Unicaja"));
+    //-----III---------------------------------------------------------------------------------------------------------------
+        System.out.println("Muestra @Query 3");
+        System.out.println(jugadorRepository.findCanastasOrderByCanastaTotales().get(0));
+    //-----IV---------------------------------------------------------------------------------------------------------------
+        System.out.println("Muestra @Query 4");
+        System.out.println(jugadorRepository.findByAsistenciasOrderBy().subList(0,5));
+    //-----V----------------------------------------------------------------------------------------------------------------
+        System.out.println("Muestra @Query 5");
+        System.out.println(jugadorRepository.findCanastasOrderByCanastasTotales("Malaga").get(0));
 
 
         //System.out.println(jugadorRepository.findOne(jugador1.getId()));

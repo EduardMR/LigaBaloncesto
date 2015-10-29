@@ -18,13 +18,13 @@ public class LigaBaloncestoApplication {
         LigaService ligaService = context.getBean(LigaService.class);
         ligaService.TestL();
 
-
+        EquipoService equipoService = context.getBean(EquipoService.class);
+        equipoService.TestE();
 
         JugadorService jugadorService = context.getBean(JugadorService.class);
         jugadorService.TestJ();
 
-        EquipoService equipoService = context.getBean(EquipoService.class);
-        equipoService.TestE();
+
 
 
 

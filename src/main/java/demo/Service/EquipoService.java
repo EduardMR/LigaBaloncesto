@@ -57,10 +57,14 @@ public class EquipoService {
         Calendar ca3 = Calendar.getInstance();
         ca3.set(1975, Calendar.APRIL, 2);
         Date birthdate2 = ca3.getTime();
-
         madrid.setFechaCreacion(birthdate2);
 
+        Temporada temporada2 = temporadaRepository.findByAño("14-15");
         equipoRepository.save(madrid);
+
+        temporada.getEquipos().add(madrid);
+
+        temporadaRepository.save(temporada);
 
         //Equipo 3------------------------------------------------------------------------------------------------------
 
@@ -71,10 +75,13 @@ public class EquipoService {
         Calendar ca2 = Calendar.getInstance();
         ca2.set(1960, Calendar.JUNE, 25);
         Date birthdate3 = ca2.getTime();
-
         sevilla.setFechaCreacion(birthdate3);
-
+        Temporada temporad3 = temporadaRepository.findByAño("14-15");
         equipoRepository.save(sevilla);
+
+        temporada.getEquipos().add(sevilla);
+
+        temporadaRepository.save(temporada);
 
         //Equipo 4------------------------------------------------------------------------------------------------------
 
@@ -87,8 +94,12 @@ public class EquipoService {
         Date birthdate4 = ca4.getTime();
 
         malaga.setFechaCreacion(birthdate4);
-
+        Temporada temporada4 = temporadaRepository.findByAño("14-15");
         equipoRepository.save(malaga);
+
+        temporada.getEquipos().add(malaga);
+
+        temporadaRepository.save(temporada);
 
         //Equipo 5------------------------------------------------------------------------------------------------------
 
@@ -99,10 +110,14 @@ public class EquipoService {
         Calendar ca5 = Calendar.getInstance();
         ca5.set(1969, Calendar.JULY, 12);
         Date birthdate5 = ca5.getTime();
-
+        Temporada temporada5 = temporadaRepository.findByAño("14-15");
         granCanaria.setFechaCreacion(birthdate5);
 
         equipoRepository.save(granCanaria);
+
+        temporada.getEquipos().add(granCanaria);
+
+        temporadaRepository.save(temporada);
     }
 }
 
