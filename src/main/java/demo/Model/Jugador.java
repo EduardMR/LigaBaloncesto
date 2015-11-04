@@ -1,6 +1,8 @@
 package demo.Model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -22,6 +24,7 @@ public class Jugador {
     private Integer rebotesTotales;
     private String posicion;
 
+    @JsonIgnore
     @ManyToOne
     private Equipo equipo;
 
