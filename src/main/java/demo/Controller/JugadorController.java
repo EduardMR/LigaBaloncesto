@@ -1,12 +1,11 @@
 package demo.controller;
 
-import demo.Exceptions.JugadorException;
+import demo.Exceptions.JugadorExeption;
 import demo.Model.Jugador;
 import demo.Repository.JugadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -45,7 +44,7 @@ public class JugadorController {
         Jugador jugador = jugadorRepository.findOne(id);
 
         if(jugador == null){
-            throw new JugadorException("El jugador con " + id + " no existe");}
+            throw new JugadorExeption("El jugador con " + id + " no existe");}
 
         jugadorRepository.delete(id);
     }
@@ -55,7 +54,7 @@ public class JugadorController {
         Jugador jugador = jugadorRepository.findOne(id);
 
         if(jugador == null){
-            throw new JugadorException("El jugador con " + id + " no existe");
+            throw new JugadorExeption("El jugador con " + id + " no existe");
         }
         return jugador;
     }
@@ -66,7 +65,7 @@ public class JugadorController {
         Jugador d1 = jugadorRepository.findOne(id);
 
         if(d1 == null){
-            throw new JugadorException("El jugador con " + id + " no existe");
+            throw new JugadorExeption("El jugador con " + id + " no existe");
         }
 
         return jugadorRepository.save(jugador);
